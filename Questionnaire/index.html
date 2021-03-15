@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="background_img" src="img/image 1.png" alt="">
+    <a name="home"></a>
+    <header>
+        <div class="container">
+            <a href="#home">
+                <img src="img/лого.png">
+            </a>
+            <div>
+                <a class="button" href="#home">
+                    <p>Обратный звонок</p>
+                </a>
+                <P>8-800-080-19-19</P>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="block1" class="block">
+            <h1>Наймите личного водителя с опытом более 15 лет</h1>
+            <p>Пройдите тест и получите анкеты подходящих лично для вас водителей</p>
+            <div>
+                <li>
+                    <ol>- 167 персональных водителей в штате</ol>
+                    <ol>- Собственный автопарк С-класса</ol>
+                    <ol>- Ненормированный график работы</ol>
+                </li>
+                <div>
+                    <a class="button" onclick="Go(2)"> Пройти тест </a>
+                </div>
+            </div>
+        </div>
+        <div id="block2" class="hidden">
+            <h1>Сколько времени в день вы проводите в дороге?</h1>
+            <div>
+                <div>
+                    <div><input name='block2' id="block21" type="radio"><label for="block21">До 1 часа</label></div>
+                    <div><input name='block2' id="block22" type="radio"><label for="block22">1-2 часа</label></div>
+                    <div><input name='block2' id="block23" type="radio"><label for="block23">2-4 часа</label></div>
+                    <div><input name='block2' id="block24" type="radio"><label for="block24">Более 4 часов</label></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(1)"> Назад </a>
+                    <a class="button" onclick="Go(3)"> Далее </a>
+                </div>
+            </div>
+        </div>
+        <div id="block3" class="hidden">
+            <h1>Выберите предпочитаемые марки автомобилей?</h1>
+            <div>
+                <div>
+                    <div><input name='block3' id="block31" type="checkbox"><label for="block31">Mercedes-Benz</label></div>
+                    <div><input name='block3' id="block32" type="checkbox"><label for="block32">Volvo</label></div>
+                    <div><input name='block3' id="block33" type="checkbox"><label for="block33">BMW</label></div>
+                    <div><input name='block3' id="block34" type="checkbox"><label for="block34">Land Rover</label></div>
+                    <div><input name='block3' id="block35" type="checkbox"><label for="block35">Audi</label></div>
+                    <div><input name='block3' id="block36" type="checkbox"><label for="block36">Porsche</label></div>
+                    <div><input name='block3' id="block37" type="checkbox"><label for="block37">Lexus</label></div>
+                    <div><input name='block3' id="block38" type="checkbox"><label for="block38">Infiniti</label></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(2)"> Назад </a>
+                    <a class="button" onclick="Go(4)"> Далее </a>
+                </div>
+            </div>
+        </div>
+        <div id="block4" class="hidden">
+            <h1>Что для вас самое главное в личном водителе?</h1>
+            <div>
+                <div>
+                    <div><input name='block4' id="block41" type="radio"><label for="block41">Пунктуальность</label></div>
+                    <div><input name='block4' id="block42" type="radio"><label for="block42">Умение поддержать беседу</label></div>
+                    <div><input name='block4' id="block43" type="radio"><label for="block43">Образованность и такт</label></div>
+                    <div><input name='block4' id="block44" type="radio"><label for="block44">Отсутствие вредных привычек</label></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(3)"> Назад </a>
+                    <a class="button" onclick="Go(5)"> Далее </a>
+                </div>
+            </div>
+        </div>
+        <div id="block5" class="hidden">
+            <h1>В какой сфере вы работаете?</h1>
+            <div>
+                <div>
+                    <div><input name='block5' id="block51" type="radio"><label for="block51">Предприниматель</label></div>
+                    <div><input name='block5' id="block52" type="radio"><label for="block52">Финансы и банкинг</label></div>
+                    <div><input name='block5' id="block53" type="radio"><label for="block53">IT технологии</label></div>
+                    <div><input name='block5' id="block54" type="radio"><label for="block54">Другое</label></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(4)"> Назад </a>
+                    <a class="button" onclick="Go(6)"> Далее </a>
+                </div>
+            </div>
+        </div>
+        <div id="block6" class="hidden">
+            <h1>Остался последний шаг. Как с вами связаться?</h1>
+            <p>Менеджер Елена перезвонит вам через 3 минуты<br>и предоставит анкеты подходящих водителей</p>
+            <div>
+                <div>
+                    <div><label for="block61">Имя</label><input id="block61" name="block6" type="text"></div>
+                    <div><label for="block62">Телефон</label><input id="block62" name="block6" type="tel"></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(5)"> Назад </a>
+                    <a class="button" onclick="Go(7)"> Отправить </a>
+                </div>
+            </div>
+        </div>
+        <div id="block7" class="hidden">
+            <h1>Спасибо! В течение 5 минут мы вам позвоним</h1>
+            <p>И предоставим анкеты подходящих водителей</p>
+            <div>
+                <div>
+                    <a class="button" onclick="Go(1)"> Готово </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
