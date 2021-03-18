@@ -359,7 +359,7 @@ header>div>div>p {
     grid-column-gap: 25px;
 }
 
-#block6>div:nth-child(4)>div>a {
+#block6>div:nth-child(4)>div>a ,#block6>div:nth-child(4)>div>input{
     width: 260px;
     font-size: 30px;
     text-decoration: none;
@@ -400,4 +400,9 @@ header>div>div>p {
     padding: 25px 0;
     margin: 0 auto;
     display: block;
+}
+
+.content > form > div input:not(.content > form > div input[type='submit']){
+    width: 50px;
+    height: 20px;
 }

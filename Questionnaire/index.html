@@ -27,7 +27,8 @@
     </header>
 
     <div class="content">
-        <div id="block1" class="block">
+        <form onsubmit="Go(7);return false">
+        <div id="block1">
             <h1>Наймите личного водителя с опытом более 15 лет</h1>
             <p>Пройдите тест и получите анкеты подходящих лично для вас водителей</p>
             <div>
@@ -118,14 +119,15 @@
             <p>Менеджер Елена перезвонит вам через 3 минуты<br>и предоставит анкеты подходящих водителей</p>
             <div>
                 <div>
-                    <div><label for="block61">Имя</label><input id="block61" name="block6" type="text"></div>
-                    <div><label for="block62">Телефон</label><input id="block62" name="block6" type="tel"></div>
+                    <div><label for="block61">Имя</label><input id="block61" name="block6" type="text" required></div>
+                    <div><label for="block62">Телефон</label><input id="block62" name="block6" type="tel" required></div>
                 </div>
             </div>
             <div>
                 <div>
                     <a class="button" onclick="Go(5)"> Назад </a>
-                    <a class="button" onclick="Go(7)"> Отправить </a>
+                    <!-- <a class="button" onclick="Go(7)"> Отправить </a> -->
+                    <input type="submit" class="button" value="Отправить">
                 </div>
             </div>
         </div>
@@ -134,10 +136,11 @@
             <p>И предоставим анкеты подходящих водителей</p>
             <div>
                 <div>
-                    <a class="button" onclick="Go(1)"> Готово </a>
+                    <a class="button" onclick="Go(1); location.reload();"> Готово </a>
                 </div>
             </div>
         </div>
+    </form>
     </div>
     <script src="script.js"></script>
 </body>
